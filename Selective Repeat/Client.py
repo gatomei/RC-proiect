@@ -70,3 +70,4 @@ if __name__ == '__main__':
     client.open_com()
     client.run("fisier.txt")
     client.close()
+
