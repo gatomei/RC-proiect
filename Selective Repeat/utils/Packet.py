@@ -10,10 +10,14 @@ class Packet:
 
     def pack(self):
         pkt_type = pkt_type2bin.get(self.packetType)
+        if int(self.sequenceNo) < 100:
+            if int(self.sequenceNo) < 10:
+                self.sequenceNo = '0' + self.sequenceNo
+            self.sequenceNo = '0' + self.sequenceNo
         raw_packet = pkt_type + self.sequenceNo + self.data
         return raw_packet
 
     def unpack(self, raw_packet):
         self.packetType = pkt_bin2type.get(raw_packet[0])
-        self.sequenceNo = raw_packet[1:2]
-        self.data = raw_packet[2:]
+        self.sequenceNo = raw_packet[1:4]
+        self.data = raw_packet[4:]

@@ -2,8 +2,9 @@ import socket
 from utils.Packet import Packet
 from utils.Logger import Logger
 
+
 class Server:
-    def __init__(self, serverIP = "127.0.0.1", serverPort = 8081):
+    def __init__(self, serverIP = "127.0.0.1", serverPort = 1234):
         self.serverIP = serverIP
         self.serverPort = serverPort
         self.serverSocket = None
@@ -21,7 +22,7 @@ class Server:
 
     def run(self):
         while True:
-            recvPacket, _ = self.serverSocket.recvfrom(1024)
+            recvPacket, _ = self.serverSocket.recvfrom(1600)
             packet = Packet("","","")
             recvPacket = recvPacket.decode("utf-8")
             packet.unpack(recvPacket)
