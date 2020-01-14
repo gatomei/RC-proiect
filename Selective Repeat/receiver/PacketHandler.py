@@ -26,7 +26,7 @@ class PacketHandler:
             packet, _ = self.receiverSocket.recvfrom(1600)
         except Exception:
             self.logger.info("Couldn't receive UDP packet!\n")
-            raise ("Receiving UDP packet failed!\n")
+            raise Exception("Receiving UDP packet failed!\n")
 
         packet = packet.decode("utf-8")
         self.packet.unpack(packet)
@@ -44,14 +44,13 @@ class PacketHandler:
             self.flag = 1
 
         if self.flag == 0:
-            self.logger.info(f"On Thread {self.threadName}-Receiving packet no {self.packet.sequenceNo} containing: {self.packet.data}\n")
+            self.logger.info(f"On Thread {self.threadName}-Receiving packet no {self.packet.sequenceNo} containing: {self.packet.data}\n")\
 
             if len(self.window.receiptWin) < self.window.windowSize-1 or \
                     (self.window.receiptWin == self.window.windowSize and self.window.receiptWin[str(self.packet.sequenceNo)] == None):
                 if self.packet.checkIfLastPkt():
                     self.flagTransm = 1
                 self.window.add(self.packet)
-
 
         if int(self.window.getExpPkt()) == int(self.packet.sequenceNo):
             while True:
