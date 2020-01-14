@@ -19,17 +19,20 @@ class SenderWindow:
         self.expectedAck = 0
         self.nextPkt = 0  # used to iterate through packetList
         self.nextSeqNo = 0
+        self.in_progress = 1
 
-        if windowSize < self.maxSeq and windowSize > 0:
+        if 0 < windowSize < self.maxSeq:
             self.windowSize = windowSize
         else:
             self.logger.error("Window size should be greater than 0 and less then 2^(sequenceN-1)!")
 
-    def isEmpty(self):
+    def getMaxSeq(self):
+        return self.maxSeq
 
-         if len(self.transmitWindow) == 0:
+    def isEmpty(self):
+        if len(self.transmitWindow) == 0:
             return True
-         return False
+        return False
 
     def insideWindow(self, pktNo):
         if pktNo in self.transmitWindow:
@@ -49,7 +52,7 @@ class SenderWindow:
         self.logger.info(f"On thread-{pktNo} function ackRecv")
         with lock:
             if self.insideWindow(pktNo):
-                self.transmitWindow[pktNo][0] = None #stop timer for packet
+                self.transmitWindow[pktNo][0] = None  # stop timer for packet
         if pktNo == self.expectedAck:
             self.slideWindow()
             with lock:
@@ -60,6 +63,7 @@ class SenderWindow:
                     self.expectedAck = list(self.transmitWindow.items())[0][0]  # urm ack devine capatul inferior al ferestrei
 
     def slideWindow(self):
+
         to_delete = []
         for k, v in self.transmitWindow.items():
             if v[0] == None and v[1] == True:
@@ -71,6 +75,7 @@ class SenderWindow:
                 del self.transmitWindow[item]
 
     def getSeqNo(self):
+
         self.logger.info(f"On thread-function genSeqNo")
         with lock:
             self.transmitWindow[self.nextSeqNo] = [None, False]
@@ -82,7 +87,7 @@ class SenderWindow:
     def getNextPkt(self):
         return self.nextPkt
 
-    def startTimer(self, pktNo):  #pkt.time=timpul la momentul curent
+    def startTimer(self, pktNo):  # pkt.time=timpul la momentul curent
         self.logger.info(f"On thread-{pktNo} function startTimer")
         with lock:
             self.transmitWindow[pktNo][0] = time.time()
@@ -103,3 +108,9 @@ class SenderWindow:
         if len(self.transmitWindow) >= self.windowSize:
             return True
         return False
+
+    def stopTransm(self):
+        self.in_progress = 0
+
+    def isTransmissionDone(self):
+        return not self.in_progress
