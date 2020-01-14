@@ -4,7 +4,7 @@ from tkinter import messagebox
 from Client import Client
 from Server import Server
 import datetime
-
+from threading import Thread
 
 
 if __name__ == '__main__':
@@ -16,6 +16,9 @@ if __name__ == '__main__':
     window.minsize(600, 500)
     window.title("Selective Repeat")
     window.configure(background='black')
+
+    flag = 0
+
 
     label = ttk.Label(window, text="Choose A File")
     label.grid(column=0, row=0)
@@ -33,14 +36,15 @@ if __name__ == '__main__':
     button = ttk.Button(window, text="OK", command=select_file)
     button.grid(column=1, row=1)
 
-
     T = tk.Text(window, height=2, width=25)
     T.place(relx=0.005, rely=0.1)
-    T.insert(tk.END, "Client IP: " + client.clientIP + "\nClient Port: " + str(client.clientPort))
+    T.insert(tk.END, "Client IP: " + client.senderIP + "\nClient Port: " + str(client.senderPort))
 
     T = tk.Text(window, height=2, width=25)
     T.place(relx=0.005, rely=0.18)
     T.insert(tk.END, "Server IP: " + server.serverIP + "\nServer Port: " + str(server.serverPort))
+
+
 
     def start_transfer():
 
@@ -57,6 +61,8 @@ if __name__ == '__main__':
             client.open_com()
             client.run()
             server.run()
+            client.close()
+            server.close()
 
             T = tk.Text(window, height=2, width=60)
             T.place(relx=0.005, rely=0.50)
