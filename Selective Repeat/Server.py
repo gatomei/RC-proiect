@@ -1,14 +1,23 @@
 import socket
-from utils.Packet import Packet
 from utils.Logger import Logger
-
+from receiver.PacketHandler import PacketHandler
+from receiver.ReceiverWindow import ReceiverWindow
+import select
 
 class Server:
-    def __init__(self, serverIP = "127.0.0.1", serverPort = 1234):
+    def __init__(self, windowSize = 8, sequenceNo = 8, serverIP = "127.0.0.1", serverPort = 1234, timeout = 30.0, senderPort = 1234, senderIP = "127.0.0.1" ):
         self.serverIP = serverIP
         self.serverPort = serverPort
         self.serverSocket = None
         self.logger = Logger("Server")
+        self.timeout = timeout
+        self.senderPort = senderPort
+        self.senderIP = senderIP
+        self.window = None
+        self.sequenceNo = sequenceNo
+        self.packetHandler = None
+        self.windowSize = windowSize
+        self.flag = 0
 
     def open_com(self):
         try:
@@ -21,13 +30,16 @@ class Server:
             self.logger.error("Could not create UDP socket for communication with the server!")
 
     def run(self):
+        chance = 0  # if there are more than 3 consecutive timeouts, stop receiving packets from sender
+        self.window = ReceiverWindow(self.sequenceNo, self.windowSize)
+        self.packetHandler = PacketHandler(self.serverSocket, self.senderIP, self.senderPort, self.serverIP,
+                                           self.serverPort, self.window, self.timeout, self.logger, "Thread_Server", 0)
+
         while True:
-            recvPacket, _ = self.serverSocket.recvfrom(1600)
-            packet = Packet("","","")
-            recvPacket = recvPacket.decode("utf-8")
-            packet.unpack(recvPacket)
-            self.logger.info(f"Received {packet.packetType}, no.{packet.sequenceNo} containing {packet.data}")
-            print(f"I received {packet.packetType}, no {packet.sequenceNo} containing {packet.data}")
+            self.packetHandler.run()
+
+            if self.packetHandler.isTransmissionDonne():
+                break
 
     def close(self):
         self.serverSocket.close()
