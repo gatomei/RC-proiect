@@ -15,4 +15,3 @@ class Logger:
     def error(self, error):
         with open(self.file, "a") as f:
             f.write(f"{datetime.now()}, [{self.name}] [ERROR], {error}\n")
-
