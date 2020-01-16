@@ -1,0 +1,29 @@
+2020-01-16 16:17:11.031020, [CLIENT] [INFO], Created log file
+2020-01-16 16:17:11.637153, [CLIENT] [INFO], Created an UDP socket for communication
+2020-01-16 16:17:11.638703, [CLIENT] [INFO], Starting transmission
+2020-01-16 16:17:11.639515, [CLIENT] [INFO], On thread ACKHandler-started 
+2020-01-16 16:17:11.640488, [CLIENT] [INFO], On Thread Packet-Sending packet no 0 
+2020-01-16 16:17:11.643420, [CLIENT] [INFO], On Thread Packet-Sending packet no 1 
+2020-01-16 16:17:11.650390, [CLIENT] [INFO], On Thread Packet-Sending packet no 2 
+2020-01-16 16:17:11.656462, [CLIENT] [INFO], On Thread Packet-Sending packet no 3 
+2020-01-16 16:17:11.674632, [CLIENT] [INFO], On Thread Packet-Sending packet no 4 
+2020-01-16 16:17:11.716260, [CLIENT] [INFO], On Thread Packet-Sending packet no 5 
+2020-01-16 16:17:11.750294, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 0
+2020-01-16 16:17:11.790238, [CLIENT] [INFO], On Thread Packet-Sending packet no 6 
+2020-01-16 16:17:11.819493, [CLIENT] [INFO], On Thread Packet-Sending packet no 7 
+2020-01-16 16:17:12.077344, [CLIENT] [INFO], On Thread Packet-Sending packet no 8 
+2020-01-16 16:17:12.180483, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 1
+2020-01-16 16:17:12.767634, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 4
+2020-01-16 16:17:12.911199, [CLIENT] [INFO], On Thread Packet-Sending packet no 9 
+2020-01-16 16:17:13.323205, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 2
+2020-01-16 16:17:13.723053, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 3
+2020-01-16 16:17:13.823224, [CLIENT] [INFO], On Thread Packet-Sending packet no 10 
+2020-01-16 16:17:14.223857, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 5
+2020-01-16 16:17:15.457206, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 7
+2020-01-16 16:17:16.107259, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 6
+2020-01-16 16:17:16.567712, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 8
+2020-01-16 16:17:16.971825, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 9
+2020-01-16 16:17:17.221783, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 10
+2020-01-16 16:17:27.239375, [CLIENT] [INFO], On thread ACKHandler-stopped 
+2020-01-16 16:17:27.240361, [CLIENT] [INFO], Stopped transmission
+2020-01-16 16:17:27.241384, [CLIENT] [INFO], Client is closing

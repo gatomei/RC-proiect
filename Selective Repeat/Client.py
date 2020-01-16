@@ -7,7 +7,7 @@ from sender.AckHandler import AckHandler
 
 
 class Client:
-    def __init__(self, filename, window_size=8, sequence_no=8, senderip="127.0.0.1", sender_port=1234, receiverip ="127.0.0.1", receive_port=1234, timeout=30.0):
+    def __init__(self, filename, window_size=8, sequence_no=8, senderip="127.0.0.1", sender_port=1234, receiverip ="127.0.0.1", receive_port=1235, timeout=30.0):
         self.senderIP = senderip
         self.senderPort = sender_port
         self.senderSocket = None
@@ -19,10 +19,13 @@ class Client:
         self.timeout = timeout
         self.window = None
         self.filename = filename
+        self.flag = False
 
     def open_com(self):
         try:
             self.senderSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+            self.senderSocket.bind((self.senderIP,self.senderPort))
+            self.senderSocket.setblocking(0)
             self.logger.info("Created an UDP socket for communication")
 
         except Exception as e:
@@ -34,10 +37,10 @@ class Client:
         self.window = Window(self.sequenceNo, self.windowSize)
         self.logger.info("Starting transmission")
 
-        #ackHandler = AckHandler(self.senderSocket, self.receiverIP, self.window, self.logger)   #nu se sterg
-        #ackHandler.start()
+        ackHandler = AckHandler(self.senderSocket, self.receiverIP, self.window, self.logger)
+        ackHandler.start()
 
-        while not self.window.isEmpty() or self.window.getNextPkt() < len(packets):    # mai sunt pachete netrimise
+        while not self.window.isEmpty() or self.window.getNextPkt() < len(packets) :    # mai sunt pachete netrimise
 
             if self.window.full():                      # fereastra plina, asteptam sa mai primim ack
                 pass
@@ -48,17 +51,17 @@ class Client:
                 packetData = packets[self.window.getNextPkt()]  # luam urm pachet spre a fi trimis
                 seqNo = self.window.nextSeqNo                       # ii atribuim un nr de secv
                 packet = Packet("data", str(seqNo), packetData)
-                if self.checkIfLastPkt(packets):
-                    packet.setFlag()
+                if self.checkiflaspkt(packets):
+                    packet.setflag()
                 self.window.getSeqNo()
                 # marcam ca si folosit nr de secv
                 pktHandler = PacketHandler(self.senderSocket, self.receiverIP, self.receiverPort, packet, self.timeout,
                                            self.window, self.logger)
                 pktHandler.start()    # pornim thread pt trimiterea propriu-zisa a pachetului
 
-        #ackHandler.join()          ## nu se sterge avem nevoie
-        self.logger.info("Stopped transmission")
         self.window.stopTransm()
+        ackHandler.join()
+        self.logger.info("Stopped transmission")
 
 
     def close(self):
@@ -75,15 +78,26 @@ class Client:
 
         return packets
 
-    def checkIfLastPkt(self, packets):
+    def checkiflaspkt(self, packets):
 
-        if self.window.getNextPkt() == len(packets) - 1:
+        if self.window.nextSeqNo == (len(packets)-1):
             return True
         return False
 
     def getfilename(self):
         return self.filename
 
+    def setClientIP(self, val):
+        self.senderIP = val
+
+    def setClientPort(self,val):
+        self.senderPort = val
+
+    def getClientIP(self):
+        return self.senderIP
+
+    def getClientPort(self):
+        return self.senderPort
 
 if __name__ == '__main__':
     client = Client('fisier.txt')

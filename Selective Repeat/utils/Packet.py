@@ -27,12 +27,11 @@ class Packet:
         self.data = raw_packet[4:-1]
         self.flag = raw_packet[-1]
 
-    def setFlag(self):
+    def setflag(self):
 
         self.flag = '1'
 
-    def checkIfLastPkt(self):
-
+    def checkiflaspkt(self):
         if int(self.flag):
             return True
         return False

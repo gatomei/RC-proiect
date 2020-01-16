@@ -41,15 +41,12 @@ class SenderWindow:
 
     def mark_ack(self, pktNo):
         with lock:
-            self.logger.info(f"On thread-{pktNo} function mark_ack")
-            self.transmitWindow[pktNo][1] = True
+            self.transmitWindow[int(pktNo)][1] = True
 
     def unacked(self, pktNo):
-        self.logger.info(f"On thread-{pktNo} function unacked")
         return not self.transmitWindow[pktNo][1]
 
     def ackRecv(self, pktNo):
-        self.logger.info(f"On thread-{pktNo} function ackRecv")
         with lock:
             if self.insideWindow(pktNo):
                 self.transmitWindow[pktNo][0] = None  # stop timer for packet
@@ -63,7 +60,6 @@ class SenderWindow:
                     self.expectedAck = list(self.transmitWindow.items())[0][0]  # urm ack devine capatul inferior al ferestrei
 
     def slideWindow(self):
-
         to_delete = []
         for k, v in self.transmitWindow.items():
             if v[0] == None and v[1] == True:
@@ -76,7 +72,6 @@ class SenderWindow:
 
     def getSeqNo(self):
 
-        self.logger.info(f"On thread-function genSeqNo")
         with lock:
             self.transmitWindow[self.nextSeqNo] = [None, False]
         self.nextSeqNo += 1
@@ -89,11 +84,12 @@ class SenderWindow:
 
     def startTimer(self, pktNo):  # pkt.time=timpul la momentul curent
         self.logger.info(f"On thread-{pktNo} function startTimer")
-        with lock:
-            self.transmitWindow[pktNo][0] = time.time()
+        if pktNo in self.transmitWindow:
+            with lock:
+                self.transmitWindow[pktNo][0] = time.time()
 
     def getStartTime(self, pktNo):   # va returna valoarea timpului in momentul trimiterii pachetului
-        return self.transmitWindow[pktNo][0]
+       return self.transmitWindow[pktNo][0]
 
     def restartTimer(self, pktNo):  # pkt.time=timpul la momentul curent- in caz de nevoie de retransmitere
         if self.insideWindow(pktNo):

@@ -1,0 +1,12 @@
+2020-01-16 16:17:11.638703, [SENDERWINDOW] [INFO], Created log file
+2020-01-16 16:17:11.643923, [SENDERWINDOW] [INFO], On thread-0 function startTimer
+2020-01-16 16:17:11.650390, [SENDERWINDOW] [INFO], On thread-1 function startTimer
+2020-01-16 16:17:11.716260, [SENDERWINDOW] [INFO], On thread-4 function startTimer
+2020-01-16 16:17:11.733246, [SENDERWINDOW] [INFO], On thread-3 function startTimer
+2020-01-16 16:17:11.819493, [SENDERWINDOW] [INFO], On thread-2 function startTimer
+2020-01-16 16:17:12.040374, [SENDERWINDOW] [INFO], On thread-7 function startTimer
+2020-01-16 16:17:12.052352, [SENDERWINDOW] [INFO], On thread-5 function startTimer
+2020-01-16 16:17:12.198320, [SENDERWINDOW] [INFO], On thread-6 function startTimer
+2020-01-16 16:17:12.343120, [SENDERWINDOW] [INFO], On thread-8 function startTimer
+2020-01-16 16:17:13.294258, [SENDERWINDOW] [INFO], On thread-9 function startTimer
+2020-01-16 16:17:13.991836, [SENDERWINDOW] [INFO], On thread-10 function startTimer

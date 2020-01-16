@@ -1,6 +1,7 @@
 from threading import Thread
 import select
 import random
+from utils.Packet import Packet
 
 class AckHandler(Thread):
 
@@ -22,10 +23,12 @@ class AckHandler(Thread):
         self.ackLossProbability = ackLossProbability
         self.threadName = threadName
         self.messageSize = messageSize
+        self.packet = Packet()
+
 
 
     def run(self):
-        self.logger.info(f"On thraed {self.threadName}-started ")
+        self.logger.info(f"On thread {self.threadName}-started ")
         while not self.window.isTransmissionDone():
             if self.window.isEmpty():
                 continue
@@ -39,19 +42,22 @@ class AckHandler(Thread):
                 self.logger.error(f"On thread {self.threadName}-Could not receive UDP packet")
                 raise Exception("Receiving UDP packet failed")
 
-            if receiverAddress[0]!= self.receiverIP:
+            if not recvAck:
                 continue
-
-            recvAck = recvAck.unpack()
-            if recvAck.packetType == "ack" and \
-                    not self.window.insideWindow(recvAck.sequenceNo):
+            recvAck = recvAck.decode("utf-8")
+            self.packet.unpack(recvAck)
+            if self.packet.packetType == "ack" and \
+                    not self.window.insideWindow(int(self.packet.sequenceNo)):
                 self.logger.info(f"On thread {self.threadName} - Received packet out of window")
                 continue
 
             if self.simulate_ack_loss():
-                self.logger.info(f"On thread {self.threadName}-Lost packet no {recvAck.sequenceNo}")
-            self.logger.info(f"On thread {self.threadName}- Received ack with number {recvAck.sequenceNo}")
-            self.window.mark_acked(recvAck.sequenceNo)
+                self.logger.info(f"On thread {self.threadName}-Lost packet no {int(self.packet.sequenceNo)}")
+                continue
+
+            self.logger.info(f"On thread {self.threadName}- Received ack with number {int(self.packet.sequenceNo)}")
+            self.window.mark_ack(int(self.packet.sequenceNo))
+
 
         self.logger.info(f"On thread {self.threadName}-stopped ")
 
@@ -60,3 +66,5 @@ class AckHandler(Thread):
         if random.random() < self.ackLossProbability:
             return True
         return False
+
+

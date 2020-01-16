@@ -16,6 +16,7 @@ class ReceiverWindow:
         self.lastPkt = self.windowSize
         self.receiptWin = OrderedDict()
         self.logger = Logger("ReceiverWindow")
+        self.isPckReceipt = False
 
     def getMaxSeq(self):
 
@@ -34,21 +35,15 @@ class ReceiverWindow:
         return False
 
     def add(self, pkt):
-
             seqNo = int(self.expectedPkt)
             while int(seqNo) != int(pkt.sequenceNo):
-                if seqNo not in self.receiptWin:
+                if str(seqNo) not in self.receiptWin:
                     self.receiptWin[str(seqNo)] = None
                 seqNo += 1
                 if seqNo >= self.maxSeq:
                     seqNo %= self.maxSeq
             self.receiptWin[str(int(pkt.sequenceNo))] = pkt
-
-
-
-
             self.logger.info(f"Receiving packet no {pkt.sequenceNo} containing: {pkt.data}\n")
-
 
     def getExpectedPktAndSlide(self):
 
@@ -56,8 +51,8 @@ class ReceiverWindow:
         if len(self.receiptWin) > 0:
                 packet = self.receiptWin[str(int(self.expectedPkt))]
                 if packet:
+                    self.expectedPkt += 1
 
-                    self.expectedPkt = int(packet.sequenceNo)+1
                     del self.receiptWin[str(int(self.expectedPkt)-1)]
                     if self.expectedPkt >= self.maxSeq:
                         self.expectedPkt = int(self.expectedPkt % self.maxSeq)
@@ -65,17 +60,27 @@ class ReceiverWindow:
                     if self.lastPkt >= int(self.maxSeq) :
                         self.lastPkt = int(self.lastPkt % self.maxSeq)
 
-
         return packet
 
 
     def isOutRecvWin(self, seqNo):
+
             if (int(self.expectedPkt) >= ( int(self.maxSeq) - self.windowSize +1 )) and (int(self.expectedPkt) <= (self.maxSeq - 1)):
                 if (int(seqNo) >= self.expectedPkt) or (int(seqNo) <= self.lastPkt):
                     return False
             if int(seqNo) < int(self.expectedPkt) or int(seqNo) > int(self.lastPkt):
                 return True
             return False
+
+    def alreadyReceived(self, seqNo):
+
+        if (int(self.expectedPkt) >= (int(self.maxSeq) - self.windowSize + 1)) and (
+                int(self.expectedPkt) <= (self.maxSeq - 1)):
+            if (int(seqNo) >= self.expectedPkt) or (int(seqNo) <= self.lastPkt):
+                return False
+        if int(seqNo) < int(self.expectedPkt) or (int(seqNo)+8)%self.maxSeq< self.windowSize-1:
+            return True
+        return False
 
 
 
