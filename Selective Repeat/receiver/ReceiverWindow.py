@@ -1,6 +1,5 @@
 import math
 from utils.Logger import Logger
-import time
 from threading import Lock
 from collections import OrderedDict
 lock = Lock()
@@ -11,12 +10,14 @@ class ReceiverWindow:
 
         self.windowSize = windowSize
         self.expectedPkt = 0
-        self.maxSeq = math.pow(2, sequenceNo - 1)
+        self.maxSeq = math.pow(2, sequenceNo)
         self.maxWindowSize = math.pow(2, sequenceNo-1)
         self.lastPkt = self.windowSize
         self.receiptWin = OrderedDict()
         self.logger = Logger("ReceiverWindow")
         self.isPckReceipt = False
+        if self.windowSize > self.maxWindowSize:
+            self.windowSize = self.maxWindowSize
 
     def getMaxSeq(self):
 
@@ -78,7 +79,7 @@ class ReceiverWindow:
                 int(self.expectedPkt) <= (self.maxSeq - 1)):
             if (int(seqNo) >= self.expectedPkt) or (int(seqNo) <= self.lastPkt):
                 return False
-        if int(seqNo) < int(self.expectedPkt) or (int(seqNo)+8)%self.maxSeq< self.windowSize-1:
+        if int(seqNo) < int(self.expectedPkt) :
             return True
         return False
 

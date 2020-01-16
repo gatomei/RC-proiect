@@ -42,7 +42,7 @@ class PacketHandler:
             self.sendAck(self.packet.sequenceNo)
             self.logger.info("Packet already received! Sending again ACK for the packet with the sequence no " + self.packet.sequenceNo + ".\n")
 
-        if self.window.isOutRecvWin(self.packet.sequenceNo):
+        if not self.flag and self.window.isOutRecvWin(self.packet.sequenceNo):
             self.logger.info(f"Received packet with the sequence number {self.packet.sequenceNo} outside receipt window!\n")
             self.flag = 1
 

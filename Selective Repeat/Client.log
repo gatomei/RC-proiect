@@ -1,29 +1,838 @@
-2020-01-16 16:17:11.031020, [CLIENT] [INFO], Created log file
-2020-01-16 16:17:11.637153, [CLIENT] [INFO], Created an UDP socket for communication
-2020-01-16 16:17:11.638703, [CLIENT] [INFO], Starting transmission
-2020-01-16 16:17:11.639515, [CLIENT] [INFO], On thread ACKHandler-started 
-2020-01-16 16:17:11.640488, [CLIENT] [INFO], On Thread Packet-Sending packet no 0 
-2020-01-16 16:17:11.643420, [CLIENT] [INFO], On Thread Packet-Sending packet no 1 
-2020-01-16 16:17:11.650390, [CLIENT] [INFO], On Thread Packet-Sending packet no 2 
-2020-01-16 16:17:11.656462, [CLIENT] [INFO], On Thread Packet-Sending packet no 3 
-2020-01-16 16:17:11.674632, [CLIENT] [INFO], On Thread Packet-Sending packet no 4 
-2020-01-16 16:17:11.716260, [CLIENT] [INFO], On Thread Packet-Sending packet no 5 
-2020-01-16 16:17:11.750294, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 0
-2020-01-16 16:17:11.790238, [CLIENT] [INFO], On Thread Packet-Sending packet no 6 
-2020-01-16 16:17:11.819493, [CLIENT] [INFO], On Thread Packet-Sending packet no 7 
-2020-01-16 16:17:12.077344, [CLIENT] [INFO], On Thread Packet-Sending packet no 8 
-2020-01-16 16:17:12.180483, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 1
-2020-01-16 16:17:12.767634, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 4
-2020-01-16 16:17:12.911199, [CLIENT] [INFO], On Thread Packet-Sending packet no 9 
-2020-01-16 16:17:13.323205, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 2
-2020-01-16 16:17:13.723053, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 3
-2020-01-16 16:17:13.823224, [CLIENT] [INFO], On Thread Packet-Sending packet no 10 
-2020-01-16 16:17:14.223857, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 5
-2020-01-16 16:17:15.457206, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 7
-2020-01-16 16:17:16.107259, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 6
-2020-01-16 16:17:16.567712, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 8
-2020-01-16 16:17:16.971825, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 9
-2020-01-16 16:17:17.221783, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 10
-2020-01-16 16:17:27.239375, [CLIENT] [INFO], On thread ACKHandler-stopped 
-2020-01-16 16:17:27.240361, [CLIENT] [INFO], Stopped transmission
-2020-01-16 16:17:27.241384, [CLIENT] [INFO], Client is closing
+2020-01-16 19:27:54.195015, [CLIENT] [INFO], Created log file
+2020-01-16 19:27:54.951633, [CLIENT] [INFO], Created an UDP socket for communication
+2020-01-16 19:27:54.953496, [CLIENT] [INFO], Starting transmission
+2020-01-16 19:27:54.954048, [CLIENT] [INFO], On thread ACKHandler-started 
+2020-01-16 19:27:54.954493, [CLIENT] [INFO], On Thread Packet-Sending packet no 0 
+2020-01-16 19:27:54.954974, [CLIENT] [INFO], On Thread Packet-Sending packet no 1 
+2020-01-16 19:27:54.955497, [CLIENT] [INFO], On Thread Packet-Sending packet no 2 
+2020-01-16 19:27:54.955497, [CLIENT] [INFO], On Thread Packet-Sending packet no 3 
+2020-01-16 19:27:54.956159, [CLIENT] [INFO], On Thread Packet-Sending packet no 4 
+2020-01-16 19:27:55.022705, [CLIENT] [INFO], On Thread Packet-Sending packet no 5 
+2020-01-16 19:27:55.062731, [CLIENT] [INFO], On Thread Packet-Sending packet no 7 
+2020-01-16 19:27:55.219467, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 0
+2020-01-16 19:27:55.225418, [CLIENT] [INFO], On Thread Packet-Sending packet no 6 
+2020-01-16 19:27:55.466442, [CLIENT] [INFO], On Thread Packet-Sending packet no 8 
+2020-01-16 19:27:55.529555, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 1
+2020-01-16 19:27:55.735721, [CLIENT] [INFO], On Thread Packet-Sending packet no 9 
+2020-01-16 19:27:55.741311, [CLIENT] [INFO], On thread ACKHandler-Lost packet no 2
+2020-01-16 19:27:56.049800, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 3
+2020-01-16 19:27:56.342518, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 4
+2020-01-16 19:27:56.930612, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 7
+2020-01-16 19:27:57.104341, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 5
+2020-01-16 19:27:57.106336, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 6
+2020-01-16 19:27:57.107334, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 8
+2020-01-16 19:27:57.107641, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 9
+2020-01-16 19:28:24.973427, [CLIENT] [INFO], Packet no 2 lost.Retransmitting it
+2020-01-16 19:28:25.035604, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 2
+2020-01-16 19:28:25.070478, [CLIENT] [INFO], On Thread Packet-Sending packet no 10 
+2020-01-16 19:28:25.071773, [CLIENT] [INFO], On Thread Packet-Sending packet no 11 
+2020-01-16 19:28:25.071853, [CLIENT] [INFO], On Thread Packet-Sending packet no 12 
+2020-01-16 19:28:25.078822, [CLIENT] [INFO], On Thread Packet-Sending packet no 13 
+2020-01-16 19:28:25.118959, [CLIENT] [INFO], On Thread Packet-Sending packet no 14 
+2020-01-16 19:28:25.129962, [CLIENT] [INFO], On Thread Packet-Sending packet no 15 
+2020-01-16 19:28:25.134969, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 10
+2020-01-16 19:28:25.187322, [CLIENT] [INFO], On Thread Packet-Sending packet no 17 
+2020-01-16 19:28:25.187322, [CLIENT] [INFO], On Thread Packet-Sending packet no 16 
+2020-01-16 19:28:25.272450, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 12
+2020-01-16 19:28:25.365250, [CLIENT] [INFO], On Thread Packet-Sending packet no 18 
+2020-01-16 19:28:25.798627, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 11
+2020-01-16 19:28:25.994612, [CLIENT] [INFO], On Thread Packet-Sending packet no 19 
+2020-01-16 19:28:26.317500, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 13
+2020-01-16 19:28:26.548698, [CLIENT] [INFO], On Thread Packet-Sending packet no 20 
+2020-01-16 19:28:26.762429, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 14
+2020-01-16 19:28:26.778959, [CLIENT] [INFO], On Thread Packet-Sending packet no 21 
+2020-01-16 19:28:26.976930, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 15
+2020-01-16 19:28:27.029366, [CLIENT] [INFO], On Thread Packet-Sending packet no 22 
+2020-01-16 19:28:27.365665, [CLIENT] [INFO], On Thread Packet-Sending packet no 23 
+2020-01-16 19:28:27.555610, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 17
+2020-01-16 19:28:28.551836, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 16
+2020-01-16 19:28:28.697348, [CLIENT] [INFO], On Thread Packet-Sending packet no 24 
+2020-01-16 19:28:28.795490, [CLIENT] [INFO], On Thread Packet-Sending packet no 25 
+2020-01-16 19:28:29.814435, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 18
+2020-01-16 19:28:30.212447, [CLIENT] [INFO], On Thread Packet-Sending packet no 26 
+2020-01-16 19:28:30.522353, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 19
+2020-01-16 19:28:31.321526, [CLIENT] [INFO], On Thread Packet-Sending packet no 27 
+2020-01-16 19:28:31.437855, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 20
+2020-01-16 19:28:31.798349, [CLIENT] [INFO], On Thread Packet-Sending packet no 28 
+2020-01-16 19:28:32.040428, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 21
+2020-01-16 19:28:32.350911, [CLIENT] [INFO], On Thread Packet-Sending packet no 29 
+2020-01-16 19:28:32.881691, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 22
+2020-01-16 19:28:33.192822, [CLIENT] [INFO], On Thread Packet-Sending packet no 30 
+2020-01-16 19:28:33.481824, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 23
+2020-01-16 19:28:33.738733, [CLIENT] [INFO], On Thread Packet-Sending packet no 31 
+2020-01-16 19:28:34.779021, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 24
+2020-01-16 19:28:35.207618, [CLIENT] [INFO], On Thread Packet-Sending packet no 32 
+2020-01-16 19:28:35.533304, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 25
+2020-01-16 19:28:36.009813, [CLIENT] [INFO], On Thread Packet-Sending packet no 33 
+2020-01-16 19:28:36.564622, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 26
+2020-01-16 19:28:36.924141, [CLIENT] [INFO], On Thread Packet-Sending packet no 34 
+2020-01-16 19:28:37.719096, [CLIENT] [INFO], On thread ACKHandler-Lost packet no 27
+2020-01-16 19:28:38.859786, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 28
+2020-01-16 19:28:40.001167, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 29
+2020-01-16 19:28:40.732782, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 30
+2020-01-16 19:28:41.482862, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 31
+2020-01-16 19:28:42.148718, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 32
+2020-01-16 19:28:42.552395, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 33
+2020-01-16 19:28:42.840375, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 34
+2020-01-16 19:29:01.571690, [CLIENT] [INFO], Packet no 27 lost.Retransmitting it
+2020-01-16 19:29:01.663244, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 27
+2020-01-16 19:29:01.674610, [CLIENT] [INFO], On Thread Packet-Sending packet no 35 
+2020-01-16 19:29:01.675091, [CLIENT] [INFO], On Thread Packet-Sending packet no 36 
+2020-01-16 19:29:01.675241, [CLIENT] [INFO], On Thread Packet-Sending packet no 37 
+2020-01-16 19:29:01.676238, [CLIENT] [INFO], On Thread Packet-Sending packet no 38 
+2020-01-16 19:29:01.676975, [CLIENT] [INFO], On Thread Packet-Sending packet no 39 
+2020-01-16 19:29:01.704963, [CLIENT] [INFO], On Thread Packet-Sending packet no 40 
+2020-01-16 19:29:01.780714, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 35
+2020-01-16 19:29:01.861181, [CLIENT] [INFO], On Thread Packet-Sending packet no 41 
+2020-01-16 19:29:02.044141, [CLIENT] [INFO], On Thread Packet-Sending packet no 42 
+2020-01-16 19:29:02.085013, [CLIENT] [INFO], On Thread Packet-Sending packet no 43 
+2020-01-16 19:29:02.288760, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 36
+2020-01-16 19:29:02.589809, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 37
+2020-01-16 19:29:02.944057, [CLIENT] [INFO], On Thread Packet-Sending packet no 44 
+2020-01-16 19:29:03.120884, [CLIENT] [INFO], On Thread Packet-Sending packet no 45 
+2020-01-16 19:29:03.150839, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 38
+2020-01-16 19:29:03.595413, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 40
+2020-01-16 19:29:03.652295, [CLIENT] [INFO], On Thread Packet-Sending packet no 46 
+2020-01-16 19:29:04.021870, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 39
+2020-01-16 19:29:04.342749, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 41
+2020-01-16 19:29:04.439830, [CLIENT] [INFO], On Thread Packet-Sending packet no 48 
+2020-01-16 19:29:04.468916, [CLIENT] [INFO], On Thread Packet-Sending packet no 47 
+2020-01-16 19:29:04.625797, [CLIENT] [INFO], On Thread Packet-Sending packet no 49 
+2020-01-16 19:29:04.626006, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 42
+2020-01-16 19:29:04.969635, [CLIENT] [INFO], On Thread Packet-Sending packet no 50 
+2020-01-16 19:29:05.156737, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 43
+2020-01-16 19:29:05.888196, [CLIENT] [INFO], On Thread Packet-Sending packet no 51 
+2020-01-16 19:29:06.118759, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 44
+2020-01-16 19:29:06.367319, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 45
+2020-01-16 19:29:06.395904, [CLIENT] [INFO], On Thread Packet-Sending packet no 52 
+2020-01-16 19:29:06.906631, [CLIENT] [INFO], On Thread Packet-Sending packet no 53 
+2020-01-16 19:29:07.106997, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 46
+2020-01-16 19:29:07.491945, [CLIENT] [INFO], On Thread Packet-Sending packet no 54 
+2020-01-16 19:29:07.746803, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 48
+2020-01-16 19:29:08.620996, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 47
+2020-01-16 19:29:08.848230, [CLIENT] [INFO], On Thread Packet-Sending packet no 55 
+2020-01-16 19:29:08.936044, [CLIENT] [INFO], On Thread Packet-Sending packet no 56 
+2020-01-16 19:29:10.123767, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 49
+2020-01-16 19:29:10.684059, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 50
+2020-01-16 19:29:10.764949, [CLIENT] [INFO], On Thread Packet-Sending packet no 57 
+2020-01-16 19:29:11.218785, [CLIENT] [INFO], On Thread Packet-Sending packet no 58 
+2020-01-16 19:29:11.810230, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 51
+2020-01-16 19:29:12.442908, [CLIENT] [INFO], On Thread Packet-Sending packet no 59 
+2020-01-16 19:29:12.500925, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 52
+2020-01-16 19:29:12.778891, [CLIENT] [INFO], On Thread Packet-Sending packet no 60 
+2020-01-16 19:29:13.561892, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 53
+2020-01-16 19:29:14.103698, [CLIENT] [INFO], On Thread Packet-Sending packet no 61 
+2020-01-16 19:29:14.741271, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 54
+2020-01-16 19:29:15.098175, [CLIENT] [INFO], On Thread Packet-Sending packet no 62 
+2020-01-16 19:29:15.501055, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 55
+2020-01-16 19:29:15.750853, [CLIENT] [INFO], On Thread Packet-Sending packet no 63 
+2020-01-16 19:29:16.426798, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 56
+2020-01-16 19:29:16.731961, [CLIENT] [INFO], On Thread Packet-Sending packet no 64 
+2020-01-16 19:29:17.219977, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 57
+2020-01-16 19:29:17.414830, [CLIENT] [INFO], On Thread Packet-Sending packet no 65 
+2020-01-16 19:29:18.701966, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 58
+2020-01-16 19:29:19.245117, [CLIENT] [INFO], On Thread Packet-Sending packet no 66 
+2020-01-16 19:29:19.398066, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 59
+2020-01-16 19:29:19.647177, [CLIENT] [INFO], On Thread Packet-Sending packet no 67 
+2020-01-16 19:29:20.378836, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 60
+2020-01-16 19:29:20.906973, [CLIENT] [INFO], On Thread Packet-Sending packet no 68 
+2020-01-16 19:29:21.418966, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 61
+2020-01-16 19:29:21.874766, [CLIENT] [INFO], On Thread Packet-Sending packet no 69 
+2020-01-16 19:29:22.382892, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 62
+2020-01-16 19:29:22.899072, [CLIENT] [INFO], On Thread Packet-Sending packet no 70 
+2020-01-16 19:29:23.656882, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 63
+2020-01-16 19:29:24.102349, [CLIENT] [INFO], On Thread Packet-Sending packet no 71 
+2020-01-16 19:29:24.178696, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 64
+2020-01-16 19:29:24.533781, [CLIENT] [INFO], On Thread Packet-Sending packet no 72 
+2020-01-16 19:29:25.179851, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 65
+2020-01-16 19:29:25.590773, [CLIENT] [INFO], On Thread Packet-Sending packet no 73 
+2020-01-16 19:29:26.160942, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 66
+2020-01-16 19:29:26.482042, [CLIENT] [INFO], On Thread Packet-Sending packet no 74 
+2020-01-16 19:29:26.894427, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 67
+2020-01-16 19:29:27.302864, [CLIENT] [INFO], On Thread Packet-Sending packet no 75 
+2020-01-16 19:29:28.203531, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 68
+2020-01-16 19:29:28.574138, [CLIENT] [INFO], On Thread Packet-Sending packet no 76 
+2020-01-16 19:29:28.641893, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 69
+2020-01-16 19:29:29.033109, [CLIENT] [INFO], On Thread Packet-Sending packet no 77 
+2020-01-16 19:29:29.649686, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 70
+2020-01-16 19:29:29.897060, [CLIENT] [INFO], On Thread Packet-Sending packet no 78 
+2020-01-16 19:29:30.672123, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 71
+2020-01-16 19:29:31.187793, [CLIENT] [INFO], On Thread Packet-Sending packet no 79 
+2020-01-16 19:29:31.867851, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 72
+2020-01-16 19:29:32.552863, [CLIENT] [INFO], On Thread Packet-Sending packet no 80 
+2020-01-16 19:29:32.708734, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 73
+2020-01-16 19:29:32.980776, [CLIENT] [INFO], On Thread Packet-Sending packet no 81 
+2020-01-16 19:29:33.299589, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 74
+2020-01-16 19:29:33.698078, [CLIENT] [INFO], On Thread Packet-Sending packet no 82 
+2020-01-16 19:29:34.671477, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 75
+2020-01-16 19:29:35.192816, [CLIENT] [INFO], On Thread Packet-Sending packet no 83 
+2020-01-16 19:29:35.680520, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 76
+2020-01-16 19:29:36.563890, [CLIENT] [INFO], On Thread Packet-Sending packet no 84 
+2020-01-16 19:29:36.672812, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 77
+2020-01-16 19:29:37.153852, [CLIENT] [INFO], On Thread Packet-Sending packet no 85 
+2020-01-16 19:29:37.692824, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 78
+2020-01-16 19:29:38.020352, [CLIENT] [INFO], On Thread Packet-Sending packet no 86 
+2020-01-16 19:29:38.196907, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 79
+2020-01-16 19:29:38.819610, [CLIENT] [INFO], On Thread Packet-Sending packet no 87 
+2020-01-16 19:29:39.313900, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 80
+2020-01-16 19:29:39.402964, [CLIENT] [INFO], On Thread Packet-Sending packet no 88 
+2020-01-16 19:29:39.979790, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 81
+2020-01-16 19:29:40.402715, [CLIENT] [INFO], On Thread Packet-Sending packet no 89 
+2020-01-16 19:29:40.532712, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 82
+2020-01-16 19:29:40.920897, [CLIENT] [INFO], On Thread Packet-Sending packet no 90 
+2020-01-16 19:29:41.204759, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 83
+2020-01-16 19:29:41.583238, [CLIENT] [INFO], On Thread Packet-Sending packet no 91 
+2020-01-16 19:29:41.770775, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 84
+2020-01-16 19:29:41.992719, [CLIENT] [INFO], On Thread Packet-Sending packet no 92 
+2020-01-16 19:29:42.786603, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 85
+2020-01-16 19:29:43.263851, [CLIENT] [INFO], On Thread Packet-Sending packet no 93 
+2020-01-16 19:29:43.670138, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 86
+2020-01-16 19:29:44.326739, [CLIENT] [INFO], On Thread Packet-Sending packet no 94 
+2020-01-16 19:29:44.579733, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 87
+2020-01-16 19:29:45.011835, [CLIENT] [INFO], On Thread Packet-Sending packet no 95 
+2020-01-16 19:29:45.741801, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 88
+2020-01-16 19:29:46.364974, [CLIENT] [INFO], On Thread Packet-Sending packet no 96 
+2020-01-16 19:29:46.716023, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 89
+2020-01-16 19:29:47.186316, [CLIENT] [INFO], On Thread Packet-Sending packet no 97 
+2020-01-16 19:29:47.695066, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 90
+2020-01-16 19:29:48.074828, [CLIENT] [INFO], On Thread Packet-Sending packet no 98 
+2020-01-16 19:29:48.444724, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 91
+2020-01-16 19:29:48.904823, [CLIENT] [INFO], On Thread Packet-Sending packet no 99 
+2020-01-16 19:29:49.209825, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 92
+2020-01-16 19:29:49.509717, [CLIENT] [INFO], On Thread Packet-Sending packet no 100 
+2020-01-16 19:29:50.052822, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 93
+2020-01-16 19:29:50.489806, [CLIENT] [INFO], On Thread Packet-Sending packet no 101 
+2020-01-16 19:29:51.290980, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 94
+2020-01-16 19:29:51.511136, [CLIENT] [INFO], On Thread Packet-Sending packet no 102 
+2020-01-16 19:29:52.189683, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 95
+2020-01-16 19:29:52.375671, [CLIENT] [INFO], On Thread Packet-Sending packet no 103 
+2020-01-16 19:29:52.718023, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 96
+2020-01-16 19:29:53.060279, [CLIENT] [INFO], On Thread Packet-Sending packet no 104 
+2020-01-16 19:29:53.624733, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 97
+2020-01-16 19:29:53.868125, [CLIENT] [INFO], On Thread Packet-Sending packet no 105 
+2020-01-16 19:29:54.992723, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 98
+2020-01-16 19:29:55.624662, [CLIENT] [INFO], On Thread Packet-Sending packet no 106 
+2020-01-16 19:29:55.892734, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 99
+2020-01-16 19:29:56.243670, [CLIENT] [INFO], On Thread Packet-Sending packet no 107 
+2020-01-16 19:29:56.849667, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 100
+2020-01-16 19:29:57.371933, [CLIENT] [INFO], On Thread Packet-Sending packet no 108 
+2020-01-16 19:29:58.811537, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 101
+2020-01-16 19:29:59.140971, [CLIENT] [INFO], On Thread Packet-Sending packet no 109 
+2020-01-16 19:29:59.216670, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 102
+2020-01-16 19:29:59.464963, [CLIENT] [INFO], On Thread Packet-Sending packet no 110 
+2020-01-16 19:29:59.980817, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 103
+2020-01-16 19:30:00.442756, [CLIENT] [INFO], On Thread Packet-Sending packet no 111 
+2020-01-16 19:30:00.952674, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 104
+2020-01-16 19:30:01.309629, [CLIENT] [INFO], On Thread Packet-Sending packet no 112 
+2020-01-16 19:30:02.429705, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 105
+2020-01-16 19:30:02.808375, [CLIENT] [INFO], On Thread Packet-Sending packet no 113 
+2020-01-16 19:30:03.371703, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 106
+2020-01-16 19:30:03.714658, [CLIENT] [INFO], On Thread Packet-Sending packet no 114 
+2020-01-16 19:30:04.114764, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 107
+2020-01-16 19:30:04.557894, [CLIENT] [INFO], On Thread Packet-Sending packet no 115 
+2020-01-16 19:30:04.867822, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 108
+2020-01-16 19:30:05.065086, [CLIENT] [INFO], On Thread Packet-Sending packet no 116 
+2020-01-16 19:30:05.994721, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 109
+2020-01-16 19:30:06.357518, [CLIENT] [INFO], On Thread Packet-Sending packet no 117 
+2020-01-16 19:30:06.777231, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 110
+2020-01-16 19:30:07.118079, [CLIENT] [INFO], On Thread Packet-Sending packet no 118 
+2020-01-16 19:30:07.296632, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 111
+2020-01-16 19:30:07.828687, [CLIENT] [INFO], On Thread Packet-Sending packet no 119 
+2020-01-16 19:30:08.064714, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 112
+2020-01-16 19:30:08.309896, [CLIENT] [INFO], On Thread Packet-Sending packet no 120 
+2020-01-16 19:30:08.913732, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 113
+2020-01-16 19:30:09.280682, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 114
+2020-01-16 19:30:09.308717, [CLIENT] [INFO], On Thread Packet-Sending packet no 121 
+2020-01-16 19:30:09.702772, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 115
+2020-01-16 19:30:09.808132, [CLIENT] [INFO], On Thread Packet-Sending packet no 122 
+2020-01-16 19:30:10.008671, [CLIENT] [INFO], On Thread Packet-Sending packet no 123 
+2020-01-16 19:30:10.279111, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 116
+2020-01-16 19:30:10.816780, [CLIENT] [INFO], On Thread Packet-Sending packet no 124 
+2020-01-16 19:30:11.346837, [CLIENT] [INFO], On thread ACKHandler-Lost packet no 117
+2020-01-16 19:30:12.654657, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 118
+2020-01-16 19:30:13.850610, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 119
+2020-01-16 19:30:14.859826, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 120
+2020-01-16 19:30:15.631034, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 121
+2020-01-16 19:30:16.195613, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 122
+2020-01-16 19:30:16.803842, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 123
+2020-01-16 19:30:17.144888, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 124
+2020-01-16 19:30:36.676714, [CLIENT] [INFO], Packet no 117 lost.Retransmitting it
+2020-01-16 19:30:36.760532, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 117
+2020-01-16 19:30:36.784678, [CLIENT] [INFO], On Thread Packet-Sending packet no 125 
+2020-01-16 19:30:36.785085, [CLIENT] [INFO], On Thread Packet-Sending packet no 126 
+2020-01-16 19:30:36.785504, [CLIENT] [INFO], On Thread Packet-Sending packet no 127 
+2020-01-16 19:30:36.820038, [CLIENT] [INFO], On Thread Packet-Sending packet no 128 
+2020-01-16 19:30:36.889867, [CLIENT] [INFO], On Thread Packet-Sending packet no 129 
+2020-01-16 19:30:36.941995, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 125
+2020-01-16 19:30:36.964000, [CLIENT] [INFO], On Thread Packet-Sending packet no 131 
+2020-01-16 19:30:36.964398, [CLIENT] [INFO], On Thread Packet-Sending packet no 130 
+2020-01-16 19:30:37.017940, [CLIENT] [INFO], On Thread Packet-Sending packet no 132 
+2020-01-16 19:30:37.079930, [CLIENT] [INFO], On Thread Packet-Sending packet no 133 
+2020-01-16 19:30:37.421127, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 126
+2020-01-16 19:30:37.878677, [CLIENT] [INFO], On Thread Packet-Sending packet no 134 
+2020-01-16 19:30:38.737906, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 127
+2020-01-16 19:30:39.034141, [CLIENT] [INFO], On Thread Packet-Sending packet no 135 
+2020-01-16 19:30:39.887351, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 128
+2020-01-16 19:30:40.320666, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 129
+2020-01-16 19:30:40.354669, [CLIENT] [INFO], On Thread Packet-Sending packet no 136 
+2020-01-16 19:30:40.772712, [CLIENT] [INFO], On Thread Packet-Sending packet no 137 
+2020-01-16 19:30:40.790719, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 132
+2020-01-16 19:30:41.640675, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 130
+2020-01-16 19:30:41.971658, [CLIENT] [INFO], On Thread Packet-Sending packet no 138 
+2020-01-16 19:30:42.421808, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 133
+2020-01-16 19:30:43.198630, [CLIENT] [INFO], On thread ACKHandler-Lost packet no 131
+2020-01-16 19:30:44.164098, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 134
+2020-01-16 19:30:44.741089, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 135
+2020-01-16 19:30:45.306022, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 136
+2020-01-16 19:30:45.850915, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 137
+2020-01-16 19:30:46.009326, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 138
+2020-01-16 19:31:07.280235, [CLIENT] [INFO], Packet no 131 lost.Retransmitting it
+2020-01-16 19:31:07.412533, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 131
+2020-01-16 19:31:07.435081, [CLIENT] [INFO], On Thread Packet-Sending packet no 139 
+2020-01-16 19:31:07.436049, [CLIENT] [INFO], On Thread Packet-Sending packet no 140 
+2020-01-16 19:31:07.436747, [CLIENT] [INFO], On Thread Packet-Sending packet no 141 
+2020-01-16 19:31:07.459621, [CLIENT] [INFO], On Thread Packet-Sending packet no 142 
+2020-01-16 19:31:07.465705, [CLIENT] [INFO], On Thread Packet-Sending packet no 143 
+2020-01-16 19:31:07.471613, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 139
+2020-01-16 19:31:07.547007, [CLIENT] [INFO], On Thread Packet-Sending packet no 145 
+2020-01-16 19:31:07.547470, [CLIENT] [INFO], On Thread Packet-Sending packet no 144 
+2020-01-16 19:31:07.685830, [CLIENT] [INFO], On Thread Packet-Sending packet no 146 
+2020-01-16 19:31:07.883037, [CLIENT] [INFO], On Thread Packet-Sending packet no 147 
+2020-01-16 19:31:07.958376, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 140
+2020-01-16 19:31:08.252046, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 141
+2020-01-16 19:31:08.333296, [CLIENT] [INFO], On Thread Packet-Sending packet no 149 
+2020-01-16 19:31:08.339279, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 143
+2020-01-16 19:31:08.340294, [CLIENT] [INFO], On thread ACKHandler-Lost packet no 142
+2020-01-16 19:31:08.341295, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 145
+2020-01-16 19:31:08.348276, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 144
+2020-01-16 19:31:08.371933, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 146
+2020-01-16 19:31:08.478821, [CLIENT] [INFO], On Thread Packet-Sending packet no 148 
+2020-01-16 19:31:08.531008, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 147
+2020-01-16 19:31:08.561099, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 149
+2020-01-16 19:31:08.675855, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 148
+2020-01-16 19:31:37.675307, [CLIENT] [INFO], Packet no 142 lost.Retransmitting it
+2020-01-16 19:31:37.715608, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 142
+2020-01-16 19:31:37.727387, [CLIENT] [INFO], On Thread Packet-Sending packet no 150 
+2020-01-16 19:31:37.728222, [CLIENT] [INFO], On Thread Packet-Sending packet no 151 
+2020-01-16 19:31:37.729220, [CLIENT] [INFO], On Thread Packet-Sending packet no 152 
+2020-01-16 19:31:37.793565, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 151
+2020-01-16 19:31:37.793565, [CLIENT] [INFO], On Thread Packet-Sending packet no 153 
+2020-01-16 19:31:37.872523, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 150
+2020-01-16 19:31:37.930602, [CLIENT] [INFO], On Thread Packet-Sending packet no 154 
+2020-01-16 19:31:37.959819, [CLIENT] [INFO], On Thread Packet-Sending packet no 155 
+2020-01-16 19:31:38.094874, [CLIENT] [INFO], On Thread Packet-Sending packet no 156 
+2020-01-16 19:31:38.152899, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 152
+2020-01-16 19:31:38.158795, [CLIENT] [INFO], On Thread Packet-Sending packet no 157 
+2020-01-16 19:31:38.210823, [CLIENT] [INFO], On Thread Packet-Sending packet no 158 
+2020-01-16 19:31:38.384559, [CLIENT] [INFO], On Thread Packet-Sending packet no 159 
+2020-01-16 19:31:38.509798, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 153
+2020-01-16 19:31:38.651431, [CLIENT] [INFO], On Thread Packet-Sending packet no 160 
+2020-01-16 19:31:38.829675, [CLIENT] [INFO], On Thread Packet-Sending packet no 161 
+2020-01-16 19:31:39.238590, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 155
+2020-01-16 19:31:39.576789, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 154
+2020-01-16 19:31:39.858492, [CLIENT] [INFO], On Thread Packet-Sending packet no 162 
+2020-01-16 19:31:39.996963, [CLIENT] [INFO], On Thread Packet-Sending packet no 163 
+2020-01-16 19:31:40.200749, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 156
+2020-01-16 19:31:40.411654, [CLIENT] [INFO], On Thread Packet-Sending packet no 164 
+2020-01-16 19:31:41.033557, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 157
+2020-01-16 19:31:41.459217, [CLIENT] [INFO], On Thread Packet-Sending packet no 165 
+2020-01-16 19:31:41.627627, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 158
+2020-01-16 19:31:42.123849, [CLIENT] [INFO], On Thread Packet-Sending packet no 166 
+2020-01-16 19:31:42.412157, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 159
+2020-01-16 19:31:42.768836, [CLIENT] [INFO], On Thread Packet-Sending packet no 167 
+2020-01-16 19:31:43.122784, [CLIENT] [INFO], On thread ACKHandler-Lost packet no 160
+2020-01-16 19:31:44.584266, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 161
+2020-01-16 19:31:45.949824, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 162
+2020-01-16 19:31:47.139802, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 163
+2020-01-16 19:31:47.535105, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 164
+2020-01-16 19:31:48.140037, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 165
+2020-01-16 19:31:48.597035, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 166
+2020-01-16 19:31:48.945599, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 167
+2020-01-16 19:32:08.939644, [CLIENT] [INFO], Packet no 160 lost.Retransmitting it
+2020-01-16 19:32:09.064997, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 160
+2020-01-16 19:32:09.082241, [CLIENT] [INFO], On Thread Packet-Sending packet no 168 
+2020-01-16 19:32:09.082325, [CLIENT] [INFO], On Thread Packet-Sending packet no 169 
+2020-01-16 19:32:09.083220, [CLIENT] [INFO], On Thread Packet-Sending packet no 170 
+2020-01-16 19:32:09.089583, [CLIENT] [INFO], On Thread Packet-Sending packet no 171 
+2020-01-16 19:32:09.089583, [CLIENT] [INFO], On Thread Packet-Sending packet no 172 
+2020-01-16 19:32:09.112699, [CLIENT] [INFO], On Thread Packet-Sending packet no 173 
+2020-01-16 19:32:09.175570, [CLIENT] [INFO], On Thread Packet-Sending packet no 174 
+2020-01-16 19:32:09.214565, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 168
+2020-01-16 19:32:09.346694, [CLIENT] [INFO], On Thread Packet-Sending packet no 175 
+2020-01-16 19:32:09.404685, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 169
+2020-01-16 19:32:09.432929, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 171
+2020-01-16 19:32:09.473910, [CLIENT] [INFO], On Thread Packet-Sending packet no 176 
+2020-01-16 19:32:09.588482, [CLIENT] [INFO], On Thread Packet-Sending packet no 177 
+2020-01-16 19:32:09.659244, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 170
+2020-01-16 19:32:09.759212, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 172
+2020-01-16 19:32:09.802590, [CLIENT] [INFO], On Thread Packet-Sending packet no 178 
+2020-01-16 19:32:09.990022, [CLIENT] [INFO], On Thread Packet-Sending packet no 179 
+2020-01-16 19:32:10.391631, [CLIENT] [INFO], On Thread Packet-Sending packet no 180 
+2020-01-16 19:32:10.675778, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 173
+2020-01-16 19:32:11.036418, [CLIENT] [INFO], On Thread Packet-Sending packet no 181 
+2020-01-16 19:32:11.472077, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 174
+2020-01-16 19:32:11.854624, [CLIENT] [INFO], On Thread Packet-Sending packet no 182 
+2020-01-16 19:32:12.606070, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 175
+2020-01-16 19:32:13.060743, [CLIENT] [INFO], On Thread Packet-Sending packet no 183 
+2020-01-16 19:32:13.556811, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 176
+2020-01-16 19:32:14.011058, [CLIENT] [INFO], On Thread Packet-Sending packet no 184 
+2020-01-16 19:32:14.575844, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 177
+2020-01-16 19:32:14.995905, [CLIENT] [INFO], On Thread Packet-Sending packet no 185 
+2020-01-16 19:32:15.041601, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 178
+2020-01-16 19:32:15.230643, [CLIENT] [INFO], On Thread Packet-Sending packet no 186 
+2020-01-16 19:32:16.079640, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 179
+2020-01-16 19:32:16.454453, [CLIENT] [INFO], On Thread Packet-Sending packet no 187 
+2020-01-16 19:32:17.207599, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 180
+2020-01-16 19:32:17.884692, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 181
+2020-01-16 19:32:17.989628, [CLIENT] [INFO], On Thread Packet-Sending packet no 188 
+2020-01-16 19:32:18.224092, [CLIENT] [INFO], On Thread Packet-Sending packet no 189 
+2020-01-16 19:32:18.450996, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 182
+2020-01-16 19:32:18.990701, [CLIENT] [INFO], On Thread Packet-Sending packet no 190 
+2020-01-16 19:32:19.254714, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 183
+2020-01-16 19:32:19.531532, [CLIENT] [INFO], On Thread Packet-Sending packet no 191 
+2020-01-16 19:32:20.066560, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 184
+2020-01-16 19:32:20.338713, [CLIENT] [INFO], On Thread Packet-Sending packet no 192 
+2020-01-16 19:32:20.926394, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 185
+2020-01-16 19:32:21.705515, [CLIENT] [INFO], On Thread Packet-Sending packet no 193 
+2020-01-16 19:32:22.068797, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 186
+2020-01-16 19:32:22.409618, [CLIENT] [INFO], On Thread Packet-Sending packet no 194 
+2020-01-16 19:32:23.117140, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 187
+2020-01-16 19:32:23.361980, [CLIENT] [INFO], On Thread Packet-Sending packet no 195 
+2020-01-16 19:32:24.483892, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 188
+2020-01-16 19:32:25.209788, [CLIENT] [INFO], On Thread Packet-Sending packet no 196 
+2020-01-16 19:32:25.545946, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 189
+2020-01-16 19:32:26.119868, [CLIENT] [INFO], On Thread Packet-Sending packet no 197 
+2020-01-16 19:32:26.536910, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 190
+2020-01-16 19:32:26.956520, [CLIENT] [INFO], On thread ACKHandler-Lost packet no 191
+2020-01-16 19:32:27.188220, [CLIENT] [INFO], On Thread Packet-Sending packet no 198 
+2020-01-16 19:32:28.688939, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 192
+2020-01-16 19:32:29.491519, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 193
+2020-01-16 19:32:30.381563, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 194
+2020-01-16 19:32:31.079644, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 195
+2020-01-16 19:32:31.599709, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 196
+2020-01-16 19:32:31.972454, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 197
+2020-01-16 19:32:32.160000, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 198
+2020-01-16 19:32:49.714603, [CLIENT] [INFO], Packet no 191 lost.Retransmitting it
+2020-01-16 19:32:49.806155, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 191
+2020-01-16 19:32:49.844885, [CLIENT] [INFO], On Thread Packet-Sending packet no 199 
+2020-01-16 19:32:49.844885, [CLIENT] [INFO], On Thread Packet-Sending packet no 200 
+2020-01-16 19:32:49.846016, [CLIENT] [INFO], On Thread Packet-Sending packet no 201 
+2020-01-16 19:32:49.846595, [CLIENT] [INFO], On Thread Packet-Sending packet no 202 
+2020-01-16 19:32:49.870547, [CLIENT] [INFO], On Thread Packet-Sending packet no 204 
+2020-01-16 19:32:49.887399, [CLIENT] [INFO], On Thread Packet-Sending packet no 203 
+2020-01-16 19:32:49.945467, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 199
+2020-01-16 19:32:49.945467, [CLIENT] [INFO], On Thread Packet-Sending packet no 205 
+2020-01-16 19:32:50.086902, [CLIENT] [INFO], On Thread Packet-Sending packet no 206 
+2020-01-16 19:32:50.138847, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 200
+2020-01-16 19:32:50.266544, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 201
+2020-01-16 19:32:50.283016, [CLIENT] [INFO], On Thread Packet-Sending packet no 207 
+2020-01-16 19:32:50.508521, [CLIENT] [INFO], On Thread Packet-Sending packet no 209 
+2020-01-16 19:32:50.519960, [CLIENT] [INFO], On Thread Packet-Sending packet no 208 
+2020-01-16 19:32:50.617459, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 202
+2020-01-16 19:32:50.741361, [CLIENT] [INFO], On Thread Packet-Sending packet no 210 
+2020-01-16 19:32:50.787757, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 204
+2020-01-16 19:32:51.240748, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 203
+2020-01-16 19:32:51.690567, [CLIENT] [INFO], On Thread Packet-Sending packet no 211 
+2020-01-16 19:32:51.731518, [CLIENT] [INFO], On Thread Packet-Sending packet no 212 
+2020-01-16 19:32:51.898369, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 205
+2020-01-16 19:32:52.064653, [CLIENT] [INFO], On Thread Packet-Sending packet no 213 
+2020-01-16 19:32:52.708827, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 206
+2020-01-16 19:32:53.092649, [CLIENT] [INFO], On Thread Packet-Sending packet no 214 
+2020-01-16 19:32:53.630809, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 207
+2020-01-16 19:32:54.104867, [CLIENT] [INFO], On Thread Packet-Sending packet no 215 
+2020-01-16 19:32:54.520783, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 208
+2020-01-16 19:32:54.774766, [CLIENT] [INFO], On Thread Packet-Sending packet no 216 
+2020-01-16 19:32:55.255515, [CLIENT] [INFO], On thread ACKHandler-Lost packet no 209
+2020-01-16 19:32:56.114416, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 210
+2020-01-16 19:32:56.869740, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 211
+2020-01-16 19:32:57.782783, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 212
+2020-01-16 19:32:58.287629, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 213
+2020-01-16 19:32:59.021878, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 214
+2020-01-16 19:32:59.406333, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 215
+2020-01-16 19:32:59.618487, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 216
+2020-01-16 19:33:20.805547, [CLIENT] [INFO], Packet no 209 lost.Retransmitting it
+2020-01-16 19:33:20.868645, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 209
+2020-01-16 19:33:20.892580, [CLIENT] [INFO], On Thread Packet-Sending packet no 217 
+2020-01-16 19:33:20.893426, [CLIENT] [INFO], On Thread Packet-Sending packet no 218 
+2020-01-16 19:33:20.893976, [CLIENT] [INFO], On Thread Packet-Sending packet no 219 
+2020-01-16 19:33:20.894980, [CLIENT] [INFO], On Thread Packet-Sending packet no 220 
+2020-01-16 19:33:20.958536, [CLIENT] [INFO], On Thread Packet-Sending packet no 221 
+2020-01-16 19:33:20.969539, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 217
+2020-01-16 19:33:20.998461, [CLIENT] [INFO], On Thread Packet-Sending packet no 222 
+2020-01-16 19:33:20.998461, [CLIENT] [INFO], On Thread Packet-Sending packet no 223 
+2020-01-16 19:33:21.139528, [CLIENT] [INFO], On Thread Packet-Sending packet no 224 
+2020-01-16 19:33:21.186452, [CLIENT] [INFO], On Thread Packet-Sending packet no 225 
+2020-01-16 19:33:21.467628, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 218
+2020-01-16 19:33:21.920369, [CLIENT] [INFO], On Thread Packet-Sending packet no 226 
+2020-01-16 19:33:22.349627, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 219
+2020-01-16 19:33:22.831583, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 220
+2020-01-16 19:33:22.866715, [CLIENT] [INFO], On Thread Packet-Sending packet no 227 
+2020-01-16 19:33:22.922821, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 221
+2020-01-16 19:33:23.007695, [CLIENT] [INFO], On Thread Packet-Sending packet no 228 
+2020-01-16 19:33:23.208967, [CLIENT] [INFO], On Thread Packet-Sending packet no 229 
+2020-01-16 19:33:23.789435, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 222
+2020-01-16 19:33:24.335819, [CLIENT] [INFO], On Thread Packet-Sending packet no 230 
+2020-01-16 19:33:24.865385, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 223
+2020-01-16 19:33:25.160593, [CLIENT] [INFO], On Thread Packet-Sending packet no 231 
+2020-01-16 19:33:26.149667, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 224
+2020-01-16 19:33:26.560314, [CLIENT] [INFO], On thread ACKHandler-Lost packet no 225
+2020-01-16 19:33:26.843809, [CLIENT] [INFO], On Thread Packet-Sending packet no 232 
+2020-01-16 19:33:27.892433, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 226
+2020-01-16 19:33:29.018300, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 227
+2020-01-16 19:33:30.000478, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 228
+2020-01-16 19:33:30.650545, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 229
+2020-01-16 19:33:30.793780, [CLIENT] [INFO], On thread ACKHandler-Lost packet no 230
+2020-01-16 19:33:31.265375, [CLIENT] [INFO], On thread ACKHandler-Lost packet no 231
+2020-01-16 19:33:31.830844, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 232
+2020-01-16 19:33:51.671551, [CLIENT] [INFO], Packet no 225 lost.Retransmitting it
+2020-01-16 19:33:52.476573, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 225
+2020-01-16 19:33:52.609508, [CLIENT] [INFO], On Thread Packet-Sending packet no 233 
+2020-01-16 19:33:52.651538, [CLIENT] [INFO], On Thread Packet-Sending packet no 234 
+2020-01-16 19:33:52.779413, [CLIENT] [INFO], On Thread Packet-Sending packet no 235 
+2020-01-16 19:33:52.819509, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 233
+2020-01-16 19:33:52.831525, [CLIENT] [INFO], On Thread Packet-Sending packet no 236 
+2020-01-16 19:33:52.877513, [CLIENT] [INFO], On Thread Packet-Sending packet no 237 
+2020-01-16 19:33:53.118500, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 234
+2020-01-16 19:33:53.320960, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 235
+2020-01-16 19:33:53.322367, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 236
+2020-01-16 19:33:53.323364, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 237
+2020-01-16 19:33:55.111763, [CLIENT] [INFO], Packet no 230 lost.Retransmitting it
+2020-01-16 19:33:55.219441, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 230
+2020-01-16 19:33:55.319252, [CLIENT] [INFO], On Thread Packet-Sending packet no 238 
+2020-01-16 19:33:55.480249, [CLIENT] [INFO], Packet no 231 lost.Retransmitting it
+2020-01-16 19:33:55.514418, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 238
+2020-01-16 19:33:55.555078, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 231
+2020-01-16 19:33:55.573416, [CLIENT] [INFO], On Thread Packet-Sending packet no 239 
+2020-01-16 19:33:55.573531, [CLIENT] [INFO], On Thread Packet-Sending packet no 240 
+2020-01-16 19:33:55.607512, [CLIENT] [INFO], On Thread Packet-Sending packet no 241 
+2020-01-16 19:33:55.630709, [CLIENT] [INFO], On Thread Packet-Sending packet no 242 
+2020-01-16 19:33:55.647601, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 239
+2020-01-16 19:33:55.653749, [CLIENT] [INFO], On Thread Packet-Sending packet no 243 
+2020-01-16 19:33:55.677587, [CLIENT] [INFO], On Thread Packet-Sending packet no 244 
+2020-01-16 19:33:55.733691, [CLIENT] [INFO], On Thread Packet-Sending packet no 245 
+2020-01-16 19:33:55.744592, [CLIENT] [INFO], On Thread Packet-Sending packet no 246 
+2020-01-16 19:33:55.851439, [CLIENT] [INFO], On Thread Packet-Sending packet no 247 
+2020-01-16 19:33:56.171246, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 240
+2020-01-16 19:33:56.330116, [CLIENT] [INFO], On Thread Packet-Sending packet no 248 
+2020-01-16 19:33:56.440501, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 241
+2020-01-16 19:33:56.954003, [CLIENT] [INFO], On Thread Packet-Sending packet no 249 
+2020-01-16 19:33:57.041137, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 242
+2020-01-16 19:33:57.596275, [CLIENT] [INFO], On Thread Packet-Sending packet no 250 
+2020-01-16 19:33:57.675435, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 243
+2020-01-16 19:33:57.912509, [CLIENT] [INFO], On Thread Packet-Sending packet no 251 
+2020-01-16 19:33:58.556706, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 244
+2020-01-16 19:33:59.030577, [CLIENT] [INFO], On Thread Packet-Sending packet no 252 
+2020-01-16 19:33:59.833854, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 245
+2020-01-16 19:34:00.363079, [CLIENT] [INFO], On Thread Packet-Sending packet no 253 
+2020-01-16 19:34:01.228559, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 246
+2020-01-16 19:34:01.640318, [CLIENT] [INFO], On Thread Packet-Sending packet no 254 
+2020-01-16 19:34:02.416447, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 247
+2020-01-16 19:34:02.779645, [CLIENT] [INFO], On Thread Packet-Sending packet no 255 
+2020-01-16 19:34:02.874268, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 248
+2020-01-16 19:34:03.148571, [CLIENT] [INFO], On Thread Packet-Sending packet no 0 
+2020-01-16 19:34:04.038380, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 249
+2020-01-16 19:34:04.726378, [CLIENT] [INFO], On Thread Packet-Sending packet no 1 
+2020-01-16 19:34:05.181664, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 250
+2020-01-16 19:34:05.747844, [CLIENT] [INFO], On Thread Packet-Sending packet no 2 
+2020-01-16 19:34:06.002156, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 251
+2020-01-16 19:34:06.639738, [CLIENT] [INFO], On Thread Packet-Sending packet no 3 
+2020-01-16 19:34:06.948368, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 252
+2020-01-16 19:34:07.174629, [CLIENT] [INFO], On Thread Packet-Sending packet no 4 
+2020-01-16 19:34:07.621353, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 253
+2020-01-16 19:34:08.223007, [CLIENT] [INFO], On Thread Packet-Sending packet no 5 
+2020-01-16 19:34:08.429868, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 254
+2020-01-16 19:34:08.808064, [CLIENT] [INFO], On Thread Packet-Sending packet no 6 
+2020-01-16 19:34:09.632147, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 255
+2020-01-16 19:34:10.477730, [CLIENT] [INFO], On Thread Packet-Sending packet no 7 
+2020-01-16 19:34:11.062928, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 0
+2020-01-16 19:34:11.467866, [CLIENT] [INFO], On Thread Packet-Sending packet no 8 
+2020-01-16 19:34:11.936273, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 1
+2020-01-16 19:34:12.361281, [CLIENT] [INFO], On Thread Packet-Sending packet no 9 
+2020-01-16 19:34:13.072147, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 2
+2020-01-16 19:34:13.448127, [CLIENT] [INFO], On Thread Packet-Sending packet no 10 
+2020-01-16 19:34:14.314055, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 3
+2020-01-16 19:34:14.636546, [CLIENT] [INFO], On Thread Packet-Sending packet no 11 
+2020-01-16 19:34:14.748501, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 4
+2020-01-16 19:34:15.086559, [CLIENT] [INFO], On Thread Packet-Sending packet no 12 
+2020-01-16 19:34:15.618306, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 5
+2020-01-16 19:34:16.027192, [CLIENT] [INFO], On Thread Packet-Sending packet no 13 
+2020-01-16 19:34:16.866044, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 6
+2020-01-16 19:34:17.248232, [CLIENT] [INFO], On Thread Packet-Sending packet no 14 
+2020-01-16 19:34:18.091905, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 7
+2020-01-16 19:34:18.560048, [CLIENT] [INFO], On Thread Packet-Sending packet no 15 
+2020-01-16 19:34:18.775862, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 8
+2020-01-16 19:34:19.151144, [CLIENT] [INFO], On Thread Packet-Sending packet no 16 
+2020-01-16 19:34:19.628048, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 9
+2020-01-16 19:34:20.173030, [CLIENT] [INFO], On Thread Packet-Sending packet no 17 
+2020-01-16 19:34:20.365571, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 10
+2020-01-16 19:34:20.746938, [CLIENT] [INFO], On Thread Packet-Sending packet no 18 
+2020-01-16 19:34:21.410808, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 11
+2020-01-16 19:34:21.698352, [CLIENT] [INFO], On Thread Packet-Sending packet no 19 
+2020-01-16 19:34:22.049944, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 12
+2020-01-16 19:34:22.691852, [CLIENT] [INFO], On Thread Packet-Sending packet no 20 
+2020-01-16 19:34:23.151461, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 13
+2020-01-16 19:34:23.760875, [CLIENT] [INFO], On Thread Packet-Sending packet no 21 
+2020-01-16 19:34:24.201475, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 14
+2020-01-16 19:34:24.630182, [CLIENT] [INFO], On Thread Packet-Sending packet no 22 
+2020-01-16 19:34:25.888025, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 15
+2020-01-16 19:34:26.316943, [CLIENT] [INFO], On Thread Packet-Sending packet no 23 
+2020-01-16 19:34:26.880436, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 16
+2020-01-16 19:34:27.333110, [CLIENT] [INFO], On Thread Packet-Sending packet no 24 
+2020-01-16 19:34:27.973127, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 17
+2020-01-16 19:34:28.291530, [CLIENT] [INFO], On Thread Packet-Sending packet no 25 
+2020-01-16 19:34:29.450716, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 18
+2020-01-16 19:34:29.976004, [CLIENT] [INFO], On Thread Packet-Sending packet no 26 
+2020-01-16 19:34:30.187770, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 19
+2020-01-16 19:34:30.729102, [CLIENT] [INFO], On Thread Packet-Sending packet no 27 
+2020-01-16 19:34:31.128130, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 20
+2020-01-16 19:34:31.678002, [CLIENT] [INFO], On Thread Packet-Sending packet no 28 
+2020-01-16 19:34:31.740332, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 21
+2020-01-16 19:34:32.195329, [CLIENT] [INFO], On Thread Packet-Sending packet no 29 
+2020-01-16 19:34:33.402072, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 22
+2020-01-16 19:34:34.005899, [CLIENT] [INFO], On Thread Packet-Sending packet no 30 
+2020-01-16 19:34:34.373359, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 23
+2020-01-16 19:34:34.704465, [CLIENT] [INFO], On Thread Packet-Sending packet no 31 
+2020-01-16 19:34:35.348329, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 24
+2020-01-16 19:34:35.692496, [CLIENT] [INFO], On Thread Packet-Sending packet no 32 
+2020-01-16 19:34:36.100848, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 25
+2020-01-16 19:34:37.357932, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 26
+2020-01-16 19:34:37.479662, [CLIENT] [INFO], On Thread Packet-Sending packet no 33 
+2020-01-16 19:34:37.711470, [CLIENT] [INFO], On Thread Packet-Sending packet no 34 
+2020-01-16 19:34:38.307982, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 27
+2020-01-16 19:34:38.559142, [CLIENT] [INFO], On Thread Packet-Sending packet no 35 
+2020-01-16 19:34:39.556530, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 28
+2020-01-16 19:34:40.015115, [CLIENT] [INFO], On Thread Packet-Sending packet no 36 
+2020-01-16 19:34:40.548828, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 29
+2020-01-16 19:34:40.982379, [CLIENT] [INFO], On Thread Packet-Sending packet no 37 
+2020-01-16 19:34:41.574112, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 30
+2020-01-16 19:34:42.029186, [CLIENT] [INFO], On Thread Packet-Sending packet no 38 
+2020-01-16 19:34:42.280900, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 31
+2020-01-16 19:34:42.609673, [CLIENT] [INFO], On Thread Packet-Sending packet no 39 
+2020-01-16 19:34:42.830895, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 32
+2020-01-16 19:34:43.109247, [CLIENT] [INFO], On Thread Packet-Sending packet no 40 
+2020-01-16 19:34:44.035932, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 33
+2020-01-16 19:34:44.180588, [CLIENT] [INFO], On Thread Packet-Sending packet no 41 
+2020-01-16 19:34:44.786085, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 34
+2020-01-16 19:34:45.072995, [CLIENT] [INFO], On Thread Packet-Sending packet no 42 
+2020-01-16 19:34:45.440752, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 35
+2020-01-16 19:34:45.713179, [CLIENT] [INFO], On Thread Packet-Sending packet no 43 
+2020-01-16 19:34:46.447919, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 36
+2020-01-16 19:34:46.721842, [CLIENT] [INFO], On Thread Packet-Sending packet no 44 
+2020-01-16 19:34:47.968885, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 37
+2020-01-16 19:34:48.349612, [CLIENT] [INFO], On Thread Packet-Sending packet no 45 
+2020-01-16 19:34:48.448142, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 38
+2020-01-16 19:34:48.805844, [CLIENT] [INFO], On Thread Packet-Sending packet no 46 
+2020-01-16 19:34:49.362921, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 39
+2020-01-16 19:34:49.820065, [CLIENT] [INFO], On Thread Packet-Sending packet no 47 
+2020-01-16 19:34:51.040933, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 40
+2020-01-16 19:34:51.724301, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 41
+2020-01-16 19:34:51.783243, [CLIENT] [INFO], On Thread Packet-Sending packet no 48 
+2020-01-16 19:34:52.179494, [CLIENT] [INFO], On Thread Packet-Sending packet no 49 
+2020-01-16 19:34:52.648167, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 42
+2020-01-16 19:34:53.072846, [CLIENT] [INFO], On Thread Packet-Sending packet no 50 
+2020-01-16 19:34:53.804928, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 43
+2020-01-16 19:34:53.990146, [CLIENT] [INFO], On Thread Packet-Sending packet no 51 
+2020-01-16 19:34:54.280294, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 44
+2020-01-16 19:34:54.905658, [CLIENT] [INFO], On Thread Packet-Sending packet no 52 
+2020-01-16 19:34:55.179929, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 45
+2020-01-16 19:34:55.445794, [CLIENT] [INFO], On Thread Packet-Sending packet no 53 
+2020-01-16 19:34:56.676046, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 46
+2020-01-16 19:34:57.024279, [CLIENT] [INFO], On Thread Packet-Sending packet no 54 
+2020-01-16 19:34:57.855292, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 47
+2020-01-16 19:34:58.204691, [CLIENT] [INFO], On Thread Packet-Sending packet no 55 
+2020-01-16 19:34:58.291689, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 48
+2020-01-16 19:34:58.760879, [CLIENT] [INFO], On Thread Packet-Sending packet no 56 
+2020-01-16 19:34:59.328496, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 49
+2020-01-16 19:34:59.833895, [CLIENT] [INFO], On Thread Packet-Sending packet no 57 
+2020-01-16 19:35:01.236423, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 50
+2020-01-16 19:35:01.547195, [CLIENT] [INFO], On Thread Packet-Sending packet no 58 
+2020-01-16 19:35:02.261123, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 51
+2020-01-16 19:35:02.713260, [CLIENT] [INFO], On Thread Packet-Sending packet no 59 
+2020-01-16 19:35:02.869191, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 52
+2020-01-16 19:35:03.294739, [CLIENT] [INFO], On Thread Packet-Sending packet no 60 
+2020-01-16 19:35:03.578257, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 53
+2020-01-16 19:35:03.935066, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 54
+2020-01-16 19:35:04.046902, [CLIENT] [INFO], On Thread Packet-Sending packet no 61 
+2020-01-16 19:35:04.528910, [CLIENT] [INFO], On Thread Packet-Sending packet no 62 
+2020-01-16 19:35:05.203526, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 55
+2020-01-16 19:35:05.737240, [CLIENT] [INFO], On Thread Packet-Sending packet no 63 
+2020-01-16 19:35:06.642827, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 56
+2020-01-16 19:35:07.187912, [CLIENT] [INFO], On Thread Packet-Sending packet no 64 
+2020-01-16 19:35:07.268974, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 57
+2020-01-16 19:35:07.696685, [CLIENT] [INFO], On Thread Packet-Sending packet no 65 
+2020-01-16 19:35:08.446728, [CLIENT] [INFO], On thread ACKHandler-Lost packet no 58
+2020-01-16 19:35:09.190475, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 59
+2020-01-16 19:35:10.196787, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 60
+2020-01-16 19:35:10.980387, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 61
+2020-01-16 19:35:11.658238, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 62
+2020-01-16 19:35:12.049039, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 63
+2020-01-16 19:35:12.463986, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 64
+2020-01-16 19:35:12.824260, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 65
+2020-01-16 19:35:32.202945, [CLIENT] [INFO], Packet no 58 lost.Retransmitting it
+2020-01-16 19:35:32.266202, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 58
+2020-01-16 19:35:32.278190, [CLIENT] [INFO], On Thread Packet-Sending packet no 66 
+2020-01-16 19:35:32.279759, [CLIENT] [INFO], On Thread Packet-Sending packet no 67 
+2020-01-16 19:35:32.280173, [CLIENT] [INFO], On Thread Packet-Sending packet no 68 
+2020-01-16 19:35:32.291580, [CLIENT] [INFO], On Thread Packet-Sending packet no 69 
+2020-01-16 19:35:32.332114, [CLIENT] [INFO], On Thread Packet-Sending packet no 70 
+2020-01-16 19:35:32.361256, [CLIENT] [INFO], On Thread Packet-Sending packet no 72 
+2020-01-16 19:35:32.361404, [CLIENT] [INFO], On Thread Packet-Sending packet no 71 
+2020-01-16 19:35:32.505776, [CLIENT] [INFO], On Thread Packet-Sending packet no 73 
+2020-01-16 19:35:32.516782, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 66
+2020-01-16 19:35:32.725073, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 67
+2020-01-16 19:35:32.950769, [CLIENT] [INFO], On Thread Packet-Sending packet no 74 
+2020-01-16 19:35:33.012856, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 68
+2020-01-16 19:35:33.052385, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 69
+2020-01-16 19:35:33.075589, [CLIENT] [INFO], On Thread Packet-Sending packet no 75 
+2020-01-16 19:35:33.086993, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 71
+2020-01-16 19:35:33.112906, [CLIENT] [INFO], On Thread Packet-Sending packet no 76 
+2020-01-16 19:35:33.143002, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 70
+2020-01-16 19:35:33.178278, [CLIENT] [INFO], On Thread Packet-Sending packet no 77 
+2020-01-16 19:35:33.205856, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 72
+2020-01-16 19:35:33.315482, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 73
+2020-01-16 19:35:33.413745, [CLIENT] [INFO], On Thread Packet-Sending packet no 78 
+2020-01-16 19:35:33.441255, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 75
+2020-01-16 19:35:33.446899, [CLIENT] [INFO], On Thread Packet-Sending packet no 79 
+2020-01-16 19:35:33.479960, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 74
+2020-01-16 19:35:33.485944, [CLIENT] [INFO], On Thread Packet-Sending packet no 81 
+2020-01-16 19:35:33.537644, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 76
+2020-01-16 19:35:33.544307, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 77
+2020-01-16 19:35:33.571787, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 78
+2020-01-16 19:35:33.571787, [CLIENT] [INFO], On Thread Packet-Sending packet no 80 
+2020-01-16 19:35:33.601343, [CLIENT] [INFO], On Thread Packet-Sending packet no 83 
+2020-01-16 19:35:33.601343, [CLIENT] [INFO], On Thread Packet-Sending packet no 82 
+2020-01-16 19:35:33.607350, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 79
+2020-01-16 19:35:33.632414, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 81
+2020-01-16 19:35:33.657042, [CLIENT] [INFO], On Thread Packet-Sending packet no 84 
+2020-01-16 19:35:33.662191, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 80
+2020-01-16 19:35:33.684827, [CLIENT] [INFO], On Thread Packet-Sending packet no 86 
+2020-01-16 19:35:33.690811, [CLIENT] [INFO], On Thread Packet-Sending packet no 85 
+2020-01-16 19:35:33.744761, [CLIENT] [INFO], On Thread Packet-Sending packet no 87 
+2020-01-16 19:35:33.761685, [CLIENT] [INFO], On Thread Packet-Sending packet no 88 
+2020-01-16 19:35:33.790178, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 82
+2020-01-16 19:35:33.796908, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 83
+2020-01-16 19:35:33.798123, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 84
+2020-01-16 19:35:33.827058, [CLIENT] [INFO], On Thread Packet-Sending packet no 89 
+2020-01-16 19:35:33.875317, [CLIENT] [INFO], On Thread Packet-Sending packet no 90 
+2020-01-16 19:35:34.070251, [CLIENT] [INFO], On Thread Packet-Sending packet no 91 
+2020-01-16 19:35:34.118084, [CLIENT] [INFO], On Thread Packet-Sending packet no 92 
+2020-01-16 19:35:34.376160, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 86
+2020-01-16 19:35:34.968775, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 85
+2020-01-16 19:35:35.324201, [CLIENT] [INFO], On Thread Packet-Sending packet no 93 
+2020-01-16 19:35:35.444096, [CLIENT] [INFO], On Thread Packet-Sending packet no 94 
+2020-01-16 19:35:36.053801, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 87
+2020-01-16 19:35:36.525753, [CLIENT] [INFO], On Thread Packet-Sending packet no 95 
+2020-01-16 19:35:37.301577, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 88
+2020-01-16 19:35:37.857144, [CLIENT] [INFO], On Thread Packet-Sending packet no 96 
+2020-01-16 19:35:38.304366, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 90
+2020-01-16 19:35:38.592241, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 89
+2020-01-16 19:35:38.823105, [CLIENT] [INFO], On Thread Packet-Sending packet no 97 
+2020-01-16 19:35:38.851787, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 92
+2020-01-16 19:35:39.040670, [CLIENT] [INFO], On Thread Packet-Sending packet no 98 
+2020-01-16 19:35:39.323030, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 91
+2020-01-16 19:35:39.518637, [CLIENT] [INFO], On Thread Packet-Sending packet no 99 
+2020-01-16 19:35:39.727983, [CLIENT] [INFO], On Thread Packet-Sending packet no 100 
+2020-01-16 19:35:40.297246, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 93
+2020-01-16 19:35:40.678733, [CLIENT] [INFO], On Thread Packet-Sending packet no 101 
+2020-01-16 19:35:40.822328, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 94
+2020-01-16 19:35:41.118076, [CLIENT] [INFO], On Thread Packet-Sending packet no 102 
+2020-01-16 19:35:41.383501, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 95
+2020-01-16 19:35:41.687322, [CLIENT] [INFO], On Thread Packet-Sending packet no 103 
+2020-01-16 19:35:42.313151, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 96
+2020-01-16 19:35:42.567166, [CLIENT] [INFO], On Thread Packet-Sending packet no 104 
+2020-01-16 19:35:43.223871, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 97
+2020-01-16 19:35:43.852760, [CLIENT] [INFO], On Thread Packet-Sending packet no 105 
+2020-01-16 19:35:44.271154, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 98
+2020-01-16 19:35:44.504097, [CLIENT] [INFO], On Thread Packet-Sending packet no 106 
+2020-01-16 19:35:44.791789, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 99
+2020-01-16 19:35:45.032173, [CLIENT] [INFO], On Thread Packet-Sending packet no 107 
+2020-01-16 19:35:45.940973, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 100
+2020-01-16 19:35:46.504714, [CLIENT] [INFO], On Thread Packet-Sending packet no 108 
+2020-01-16 19:35:46.861047, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 101
+2020-01-16 19:35:47.363439, [CLIENT] [INFO], On Thread Packet-Sending packet no 109 
+2020-01-16 19:35:47.596815, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 102
+2020-01-16 19:35:48.030749, [CLIENT] [INFO], On Thread Packet-Sending packet no 110 
+2020-01-16 19:35:48.449644, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 103
+2020-01-16 19:35:48.965630, [CLIENT] [INFO], On Thread Packet-Sending packet no 111 
+2020-01-16 19:35:49.046082, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 104
+2020-01-16 19:35:49.364728, [CLIENT] [INFO], On Thread Packet-Sending packet no 112 
+2020-01-16 19:35:49.853993, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 105
+2020-01-16 19:35:50.185922, [CLIENT] [INFO], On Thread Packet-Sending packet no 113 
+2020-01-16 19:35:50.548922, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 106
+2020-01-16 19:35:51.044872, [CLIENT] [INFO], On Thread Packet-Sending packet no 114 
+2020-01-16 19:35:51.539793, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 107
+2020-01-16 19:35:52.009374, [CLIENT] [INFO], On Thread Packet-Sending packet no 115 
+2020-01-16 19:35:52.043443, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 108
+2020-01-16 19:35:52.318244, [CLIENT] [INFO], On Thread Packet-Sending packet no 116 
+2020-01-16 19:35:52.535517, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 109
+2020-01-16 19:35:52.795237, [CLIENT] [INFO], On Thread Packet-Sending packet no 117 
+2020-01-16 19:35:54.029023, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 110
+2020-01-16 19:35:54.400132, [CLIENT] [INFO], On Thread Packet-Sending packet no 118 
+2020-01-16 19:35:54.828668, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 111
+2020-01-16 19:35:55.261530, [CLIENT] [INFO], On Thread Packet-Sending packet no 119 
+2020-01-16 19:35:55.607160, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 112
+2020-01-16 19:35:55.871036, [CLIENT] [INFO], On Thread Packet-Sending packet no 120 
+2020-01-16 19:35:56.151844, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 113
+2020-01-16 19:35:56.572950, [CLIENT] [INFO], On Thread Packet-Sending packet no 121 
+2020-01-16 19:35:57.273723, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 114
+2020-01-16 19:35:57.615277, [CLIENT] [INFO], On Thread Packet-Sending packet no 122 
+2020-01-16 19:35:58.012809, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 115
+2020-01-16 19:35:58.348040, [CLIENT] [INFO], On Thread Packet-Sending packet no 123 
+2020-01-16 19:35:59.040714, [CLIENT] [INFO], On thread ACKHandler-Lost packet no 116
+2020-01-16 19:35:59.834791, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 117
+2020-01-16 19:36:00.606383, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 118
+2020-01-16 19:36:01.104505, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 119
+2020-01-16 19:36:01.598042, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 120
+2020-01-16 19:36:02.101795, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 121
+2020-01-16 19:36:02.619878, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 122
+2020-01-16 19:36:02.945172, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 123
+2020-01-16 19:36:22.871802, [CLIENT] [INFO], Packet no 116 lost.Retransmitting it
+2020-01-16 19:36:22.933750, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 116
+2020-01-16 19:36:22.981452, [CLIENT] [INFO], On Thread Packet-Sending packet no 124 
+2020-01-16 19:36:22.981652, [CLIENT] [INFO], On Thread Packet-Sending packet no 125 
+2020-01-16 19:36:22.987806, [CLIENT] [INFO], On Thread Packet-Sending packet no 127 
+2020-01-16 19:36:23.003819, [CLIENT] [INFO], On Thread Packet-Sending packet no 126 
+2020-01-16 19:36:23.039940, [CLIENT] [INFO], On Thread Packet-Sending packet no 128 
+2020-01-16 19:36:23.056751, [CLIENT] [INFO], On Thread Packet-Sending packet no 130 
+2020-01-16 19:36:23.073656, [CLIENT] [INFO], On Thread Packet-Sending packet no 129 
+2020-01-16 19:36:23.161257, [CLIENT] [INFO], On Thread Packet-Sending packet no 131 
+2020-01-16 19:36:23.264833, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 124
+2020-01-16 19:36:23.728773, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 125
+2020-01-16 19:36:23.865822, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 126
+2020-01-16 19:36:23.877554, [CLIENT] [INFO], On Thread Packet-Sending packet no 132 
+2020-01-16 19:36:23.911829, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 127
+2020-01-16 19:36:23.918300, [CLIENT] [INFO], On Thread Packet-Sending packet no 133 
+2020-01-16 19:36:23.935624, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 128
+2020-01-16 19:36:23.936593, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 130
+2020-01-16 19:36:23.959742, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 129
+2020-01-16 19:36:24.007911, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 131
+2020-01-16 19:36:24.036551, [CLIENT] [INFO], On Thread Packet-Sending packet no 134 
+2020-01-16 19:36:24.036551, [CLIENT] [INFO], On Thread Packet-Sending packet no 135 
+2020-01-16 19:36:24.036551, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 132
+2020-01-16 19:36:24.042804, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 133
+2020-01-16 19:36:24.064207, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 135
+2020-01-16 19:36:24.064768, [CLIENT] [INFO], On Thread Packet-Sending packet no 136 
+2020-01-16 19:36:24.084225, [CLIENT] [INFO], On Thread Packet-Sending packet no 137 
+2020-01-16 19:36:24.084225, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 134
+2020-01-16 19:36:24.091330, [CLIENT] [INFO], On Thread Packet-Sending packet no 139 
+2020-01-16 19:36:24.091330, [CLIENT] [INFO], On Thread Packet-Sending packet no 138 
+2020-01-16 19:36:24.207328, [CLIENT] [INFO], On Thread Packet-Sending packet no 141 
+2020-01-16 19:36:24.207848, [CLIENT] [INFO], On Thread Packet-Sending packet no 140 
+2020-01-16 19:36:24.324180, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 136
+2020-01-16 19:36:24.370084, [CLIENT] [INFO], On Thread Packet-Sending packet no 142 
+2020-01-16 19:36:24.511045, [CLIENT] [INFO], On Thread Packet-Sending packet no 143 
+2020-01-16 19:36:24.831595, [CLIENT] [INFO], On Thread Packet-Sending packet no 144 
+2020-01-16 19:36:24.902733, [CLIENT] [INFO], On thread ACKHandler-Lost packet no 138
+2020-01-16 19:36:25.169137, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 137
+2020-01-16 19:36:25.347552, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 139
+2020-01-16 19:36:25.602638, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 140
+2020-01-16 19:36:25.788816, [CLIENT] [INFO], On thread ACKHandler-Lost packet no 141
+2020-01-16 19:36:26.014739, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 142
+2020-01-16 19:36:26.132038, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 143
+2020-01-16 19:36:26.254892, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 144
+2020-01-16 19:36:54.232682, [CLIENT] [INFO], Packet no 138 lost.Retransmitting it
+2020-01-16 19:36:54.401032, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 138
+2020-01-16 19:36:54.459849, [CLIENT] [INFO], Packet no 141 lost.Retransmitting it
+2020-01-16 19:36:54.546195, [CLIENT] [INFO], On thread ACKHandler- Received ack with number 141
+2020-01-16 19:37:04.610204, [CLIENT] [INFO], On thread ACKHandler-stopped 
+2020-01-16 19:37:04.610204, [CLIENT] [INFO], Stopped transmission

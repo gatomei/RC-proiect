@@ -13,7 +13,7 @@ class SenderWindow:
         # secventa de numere a primului frame
         self.SeqFirst = 0
         self.logger = Logger("SenderWindow")
-        self.maxSeq = math.pow(2, self.sequenceNoBit - 1)   #fereastra are dim max jumatatate din numarul de secvente
+        self.maxSeq = math.pow(2, self.sequenceNoBit )   #fereastra are dim max jumatatate din numarul de secvente
         # secventa de numere a ultimului frame
         self.transmitWindow = OrderedDict()  # va contine timerul si daca a fost ack(true/false)
         self.expectedAck = 0
@@ -21,7 +21,7 @@ class SenderWindow:
         self.nextSeqNo = 0
         self.in_progress = 1
 
-        if 0 < windowSize < self.maxSeq:
+        if 0 < windowSize <= self.maxSeq/2:
             self.windowSize = windowSize
         else:
             self.logger.error("Window size should be greater than 0 and less then 2^(sequenceN-1)!")
@@ -44,7 +44,8 @@ class SenderWindow:
             self.transmitWindow[int(pktNo)][1] = True
 
     def unacked(self, pktNo):
-        return not self.transmitWindow[pktNo][1]
+        if pktNo in self.transmitWindow:
+            return not self.transmitWindow[pktNo][1]
 
     def ackRecv(self, pktNo):
         with lock:
